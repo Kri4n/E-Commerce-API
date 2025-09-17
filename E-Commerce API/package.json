@@ -8,10 +8,11 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.1"
   },
-  "name": "csp2-b482-reambonanza-lerry",
+  "name": "ecommerceapi",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

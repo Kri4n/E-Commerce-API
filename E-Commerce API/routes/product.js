@@ -17,13 +17,28 @@ router.get("/active", productController.getActiveProducts);
 router.get("/:productId", productController.getSingleProduct);
 
 // Update Product Info (Admin Only)
-router.patch("/:productId/update", verify, verifyAdmin, productController.updateProduct);
+router.patch(
+  "/:productId/update",
+  verify,
+  verifyAdmin,
+  productController.updateProduct
+);
 
 // Archive Product (Admin Only)
-router.patch("/:productId/archive", verify, verifyAdmin, productController.archiveProduct);
+router.patch(
+  "/:productId/archive",
+  verify,
+  verifyAdmin,
+  productController.archiveProduct
+);
 
 // Activate Product (Admin Only)
-router.patch("/:productId/activate", verify, verifyAdmin, productController.activateProduct);
+router.patch(
+  "/:productId/activate",
+  verify,
+  verifyAdmin,
+  productController.activateProduct
+);
 
 router.post("/search-by-name", productController.searchByName);
 
