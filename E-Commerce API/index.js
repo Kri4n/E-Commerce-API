@@ -24,9 +24,8 @@ app.use(express.urlencoded({ extended: true }));
 const corsOptions = {
   origin: [
     "http://localhost:8000",
-    "http://localhost:4006",
     "http://localhost:3000",
-    "https://cartify-io.vercel.app/",
+    "https://cartify-io.vercel.app",
   ], //allow requests from this origin
   credentials: true, // Allows credentials(cookies, authorization headers)
   optionsSuccessStatus: 200, // Provides a status code to use for successful options request
